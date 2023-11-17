@@ -13,9 +13,9 @@ const freelancers = [
   
    let setIntervalId;
    let price = 30;
-   let freelancer = 3;
+   let freelancer = [];
 const ave = document.getElementById("price")
-console.log(ave);
+ave.append(price)
 const table = document.getElementById("table")
 
 
@@ -35,23 +35,19 @@ const addFreelancer = (freelancers)=>{
   table.append(tableRow)
   
   
-  for(var i = 0; i < freelancer; i++){
-      freelancer += i;
+  for(var i = 0; i < freelancer.length; i++){
+      freelancer = freelancer.length[i];
       console.log(freelancer)
   }
  // freelancers.price = (price + freelancers.price)/lancers
   //price.textContent = freelancers.price
 }
 
-setIntervalId = setInterval(()=>{
+//setIntervalId = setInterval(()=>{
   //set interval will run forever unless you tell it to stop, so it should only run under some condtion, otherwise you should clear the interval(it's important)
-  if(freelancer > 0){//there are more freelancers in the freelancer array to add to the page
+  if(freelancer < [0]){//there are more freelancers in the freelancer array to add to the page
       addFreelancer(freelancers)
   }else{//if all if the free lancers have been added
       clearInterval(setIntervalId)
   }
-},500)
-
-  
-  
-  
+//},500)    
