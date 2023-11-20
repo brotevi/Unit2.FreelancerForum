@@ -36,10 +36,11 @@ const addFreelancer = (freelancers)=>{
   
   
   for(var i = 0; i < freelancer.length; i++){
-      freelancer = freelancer.length[i];
-      console.log(freelancer)
+      i +=1;
+      //return freelancer = i;
+      console.log(i);
   }
- // freelancers.price = (price + freelancers.price)/lancers
+ // freelancers.price = (price + freelancers.price)/i
   //price.textContent = freelancers.price
 }
 
